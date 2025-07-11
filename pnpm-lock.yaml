@@ -11,6 +11,9 @@ importers:
       amqplib:
         specifier: ^0.10.8
         version: 0.10.8
+      dotenv:
+        specifier: ^17.0.1
+        version: 17.0.1
       mongodb:
         specifier: ^6.17.0
         version: 6.17.0
@@ -39,6 +42,10 @@ packages:
 
   buffer-more-ints@1.0.0:
     resolution: {integrity: sha512-EMetuGFz5SLsT0QTnXzINh4Ksr+oo4i+UGTXEshiGCQWnsgSs7ZhJ8fzlwQ+OzEMs0MpDAMr1hxnblp5a4vcHg==}
+
+  dotenv@17.0.1:
+    resolution: {integrity: sha512-GLjkduuAL7IMJg/ZnOPm9AnWKJ82mSE2tzXLaJ/6hD6DhwGfZaXG77oB8qbReyiczNxnbxQKyh0OE5mXq0bAHA==}
+    engines: {node: '>=12'}
 
   memory-pager@1.5.0:
     resolution: {integrity: sha512-ZS4Bp4r/Zoeq6+NLJpP+0Zzm0pR8whtGPf1XExKLJBAczGMnSi3It14OiNCStjQjM6NU1okjQGSxgEZN8eBYKg==}
@@ -125,6 +132,8 @@ snapshots:
   bson@6.10.4: {}
 
   buffer-more-ints@1.0.0: {}
+
+  dotenv@17.0.1: {}
 
   memory-pager@1.5.0: {}
 

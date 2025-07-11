@@ -1,5 +1,7 @@
+require("dotenv").config();
 const { getChannel } = require("./lib/queue");
 const { sendEmailToAll } = require("./lib/email");
+console.log("Using RabbitMQ URL:", process.env.RABBITMQ_URL);
 
 async function startWorker() {
   const channel = await getChannel();
@@ -12,6 +14,7 @@ async function startWorker() {
     if (msg !== null) {
       const blog = JSON.parse(msg.content.toString());
       console.log("📨 Processing blog:", blog.title);
+      console.log("blog:", blog);
 
       try {
         await sendEmailToAll(blog);
